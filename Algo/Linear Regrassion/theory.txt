@@ -16,6 +16,12 @@ loss function for weight = dw = -(2/n)  ∑ Xi(y - y_pred)
 loss function for bias = db = -(2/n)  ∑ (y - y_pred)
 
 
+Mean squared error (MSE) is the average of the squared error that is used as the loss function for least squares regression:
+    E = 1/n ∑ (y - y_pred)^2
+
+new_W = old_W - learning_rate * dE/dW
+new_b = old_b - learning_rate * dE/db
+
 ! Advantages
 
 !Disadvantages

@@ -36,7 +36,7 @@ class Liner_Regression:
         predict_y = self.predict(self.X)
 
         # Loss function for weight and bias
-        dw = -(2 / self.m) * np.sum(self.X.T.dot(self.Y - predict_y))
+        dw = -(2 / self.m) * self.X.T.dot(self.Y - predict_y)
         db = -(2 / self.m) * np.sum(self.Y - predict_y)
 
         # update weight and bias
