@@ -1,30 +1,3 @@
-**Gradient Descent:**
-
-Gradient Descent is an optimization algorithm used for minimizing the loss function in various machine learning algorithms. It is used for updating the parameters of the learning model.
-
-w = w - α\*dw
-
-b = b - α\*db
-
-
-**Learning Rate:**
-
-Learning rate is a tuning parameter in an optimization algorithm that determines the step size at each iteration while moving toward a minimum of a loss function.
-
-
-loss function for weight = dw = -(2/n)  ∑ Xi(y - y_pred)
-loss function for bias = db = -(2/n)  ∑ (y - y_pred)
-
-
-Mean squared error (MSE) is the average of the squared error that is used as the loss function for least squares regression:
-    E = 1/n ∑ (y - y_pred)^2
-
-new_W = old_W - learning_rate * dE/dW
-new_b = old_b - learning_rate * dE/db
-
-! Advantages
-
-!Disadvantages
-
-
+@ For theory part go there ⬇️
+ 
 Link: https://www.notion.so/Linear-Regression-1163f25abc61480a9a7e42acab052a40?pvs=4
