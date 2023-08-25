@@ -1,2 +1,2 @@
-# MachineLarning-training
-Trainig Going ON!!
+# MachineLearning-training
+Training Going ON!!
