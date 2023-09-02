@@ -3,6 +3,7 @@
     "asarray",
     "figsize",
     "iloc",
+    "joblib",
     "nltk",
     "pyplot",
     "sklearn",
