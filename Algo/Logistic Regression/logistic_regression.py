@@ -7,9 +7,8 @@ def sigmoid(x):
 
     return 1/(1 + np.exp(-x))
 
+
 # Create the class --
-
-
 class LogisticRegression:
     def __init__(self, no_iteration, learning_rate) -> None:
         self.w = None
@@ -18,7 +17,6 @@ class LogisticRegression:
         self.learning_rate = learning_rate
 
     # Fit the data --
-
     def fit(self, X, Y):
 
         # get the number of features --
@@ -33,6 +31,7 @@ class LogisticRegression:
         for _ in range(self.no_iteration):
             self.update_parm()
 
+    # Update weight and bias for reduce loss function value
     def update_parm(self):
 
         z = np.dot(self.X, self.w) + self.b  # z = w*X +b
@@ -48,6 +47,7 @@ class LogisticRegression:
         self.w = self.w - self.learning_rate*dw
         self.b = self.b - self.learning_rate*db
 
+    # Predict VALUE of Y corresponding of X
     def predict(self, x):
         z = z = np.dot(x, self.w) + self.b
         predict_y = sigmoid(z)
